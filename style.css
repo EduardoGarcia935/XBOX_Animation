@@ -16,6 +16,10 @@ body{
 svg{
     width: 200px;
     height: 400px;
+    filter: drop-shadow(0px 0px 0px rgba(247 , 247 , 247 , 0))
+    drop-shadow(0px 0px 0px rgba(0 , 0, 0 ,0));
+
+    animation: xbox-shadow 12s ease 0s forwards;
 }
 
 #xbox-x1{
@@ -99,4 +103,22 @@ svg{
 #xbox-logo{
     opacity: 0;
     animation: xbox-logo 7s ease 7s forwards;
+}
+
+@keyframes xbox-shadow{
+    0%,20%{
+        filter: drop-shadow(0px 0px 0px rgba(247 , 247 , 247 , 0))
+        drop-shadow(0px 0px 0px rgba(0 , 0, 0 ,0));
+    }
+    40%,50%{
+        filter: drop-shadow(0px 0px 0px rgba(247 , 247 , 247 , 0.5))
+        drop-shadow(0px 4px 20px rgba(0 , 0, 0 ,0.9));
+    }
+    75%{
+
+    }
+    100%{
+        filter: drop-shadow(0px 0px 0px rgba(247 , 247 , 247 , 0.5))
+        drop-shadow(0px 4px 20px rgba(0 , 0, 0 ,0.9));
+    }
 }
